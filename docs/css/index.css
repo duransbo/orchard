@@ -1,0 +1,53 @@
+.intro {
+  background-color: #efefef;
+}
+.intro-invite {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  background-color: #31ab86;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+.blog {
+  background-image: url("../image/texture.jpg");
+}
+.blog-title {
+  color: #ffaa82;
+}
+.blog-articles {
+  align-items: stretch;
+  justify-content: space-between;
+}
+.blog-article {
+  margin-top: 25px;
+  border: 5px solid #fff;
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+.blog-article-link {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  display: block;
+  background-color: rgba(18,18,18,0.8);
+  text-align: center;
+}
+.blog-invite {
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px 20px;
+  display: flex;
+  background-color: #31ab86;
+  color: #fff;
+  text-align: center;
+  justify-content: center;
+}
+@media all and (min-width: 600px) {
+  .blog-article {
+    width: 32%;
+  }
+}

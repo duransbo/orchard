@@ -1,0 +1,213 @@
+/* STRUCTURE TAG */
+body,
+nav,
+figure,
+form,
+fieldset,
+ul,
+ol,
+li,
+div,
+header,
+footer,
+main,
+section,
+article,
+aside {
+	width: 100%;
+	margin: 0;
+	box-sizing: border-box;
+	border-width: 0;
+	padding: 0;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	align-content: flex-start;
+}
+html {
+	overflow-y: scroll;
+	font-family: "Trebuchet MS";
+	font-size: 10px;
+}
+main {
+	display: block;
+}
+
+
+
+
+/* TEXT TAG */
+th,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+	font-weight: bold;
+}
+h1 {
+	font-size: 3.0rem;
+}
+h2 {
+	font-size: 2.8rem;
+}
+h3,
+caption,
+legend {
+	font-size: 2.6rem;
+}
+h4 {
+	font-size: 2.4rem;
+}
+h5 {
+	font-size: 2.2rem;
+}
+h6 {
+	font-size: 2.0rem;
+}
+dfn {
+	font-style: normal;
+}
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+
+
+
+/* FORM TAG */
+input[type=button],
+input[type=file],
+input[type=reset],
+input[type=submit],
+button {
+	width: 150px;
+	height: 50px;
+	cursor: pointer;
+	outline: none;
+}
+input[type=color],
+input[type=checkbox],
+input[type=radio],
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=text],
+input[type=time],
+input[type=url],
+select {
+	height: 20px;
+}
+input[type=color],
+input[type=checkbox],
+input[type=radio]{
+	width: 20px;
+	cursor: pointer;
+	outline: none;
+}
+input[type=date],
+input[type=email],
+input[type=number],
+input[type=password],
+input[type=range],
+input[type=search],
+input[type=text],
+input[type=time],
+input[type=url],
+select,
+textarea {
+	width: 250px;
+	float: left;
+	outline: none;
+}
+textarea {
+	height: 100px;
+}
+@font-face {
+  font-family: 'Icon';
+  font-style: 'normal';
+  font-weight: 'normal';
+  src: url("../font/fontawesome-webfont.eot?v=#4.0.3");
+  src: url("../font/fontawesome-webfont.eot?#iefix&v=#4.0.3") format('embedded-opentype'), url("../font/fontawesome-webfont.woff?v=#4.0.3") format('woff'), url("../font/fontawesome-webfont.ttf?v=#4.0.3") format('truetype'), url("../font/fontawesome-webfont.svg#fontawesomeregular?v=#4.0.3") format('svg');
+}
+@font-face {
+  font-family: 'Inconsolata';
+  src: url("../font/Inconsolata.otf");
+}
+.-container {
+  padding: 50px 5%;
+}
+.-icon {
+  font-family: 'Icon';
+  text-align: center;
+}
+body {
+  font-size: 1.8rem;
+  font-family: 'Inconsolata';
+}
+h1 {
+  margin: 0;
+  color: #ac372c;
+}
+p {
+  margin: 50px 0 0 0;
+  line-height: 150%;
+}
+.body-header {
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+.logo-link {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.logo-icon {
+    height: 60%;
+    margin: 0 5px;
+}
+.logo-title {
+    font-size: 1.5rem;
+}
+.menu-control {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(211, 43, 31);
+    line-height: 40px;
+    color: #fff;
+    justify-content: center;
+}
+.menu-header {
+    padding: 0px 10px 10px 10px;
+    position: absolute;
+    background-color: rgb(18, 18, 18);
+    color: #fff;
+    transition: transform .3s;
+}
+.menu-header._close {
+    transform: translateX(-100%);
+}
+.menu-link {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:  rgb(50, 50, 50);
+    text-align: center;
+}
+.body-footer {
+	height: 50px;
+	background-image: url('../image/logo.png');
+	background-size: auto 60%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}

@@ -24,5 +24,8 @@
     "regen": "hexo clean && hexo generate",
     "commit": "git add . && git commit -m",
     "deploy": "git push -u origin master"
+  },
+  "dependencies": {
+    "hexo-renderer-stylus": "^0.3.3"
   }
 }

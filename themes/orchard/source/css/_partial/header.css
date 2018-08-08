@@ -1,0 +1,44 @@
+.body-header {
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    justify-content: space-between;
+}
+.logo-link {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.logo-icon {
+    height: 60%;
+    margin: 0 5px;
+}
+.logo-title {
+    font-size: 1.5rem;
+}
+.menu-control {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: rgb(211, 43, 31);
+    line-height: 40px;
+    color: #fff;
+    justify-content: center;
+}
+.menu-header {
+    padding: 0px 10px 10px 10px;
+    position: absolute;
+    background-color: rgb(18, 18, 18);
+    color: #fff;
+    transition: transform .3s;
+}
+.menu-header._close {
+    transform: translateX(-100%);
+}
+.menu-link {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    background-color:  rgb(50, 50, 50);
+    text-align: center;
+}
