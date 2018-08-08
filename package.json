@@ -22,6 +22,7 @@
     "hexo-server": "^0.2.0"
   },
   "scripts": {
-    "deploy": "hexo generate && git add . && git commit -m"
+    "commit": "hexo generate && git add . && git commit -m",
+    "deploy": "git push -u origin master"
   }
 }
