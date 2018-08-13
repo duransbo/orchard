@@ -1,18 +1,1 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width">
-		<%- css('css/template') %>
-		<%- css('css/index') %>
-	</head>
-
-	<body>
-    <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    <%- body %>
-    <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-  </body>
-
-</html>
+<%- partial('_templates/clean', null, {cache: !config.relative_link}) %>

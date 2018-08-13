@@ -1,0 +1,26 @@
+<% page.teste = page.teste || (page.layout == 'post' ? 'artigo' : 'home') %>
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<base href="<%- config.root %>">
+		<%- partial('_pages/' + page.teste + '/index-head', null, {cache: !config.relative_link}) %>
+		<link rel="shortcut icon" href="image/orchard.ico" type="image/x-icon">
+		<link rel="canonical" href="<%- path %>">
+		<%- css('css/template') %>
+		<%- css('css/' + page.teste) %>
+	</head>
+
+	<body>
+    <%- partial('_components/header', null, {cache: !config.relative_link}) %>
+		<%- partial('_pages/' + page.teste + '/index', null, {cache: !config.relative_link}) %>
+    <%- partial('_components/footer', null, {cache: !config.relative_link}) %>
+		<%- js('js/script') %>
+		<%- js('js/header') %>
+		<%- js('js/' + page.teste) %>
+  </body>
+
+</html>
