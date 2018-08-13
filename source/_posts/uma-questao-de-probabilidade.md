@@ -1,7 +1,7 @@
 ---
-title: Acaso, coincidêcia e sorte Uma questão de probabilidade
+title: "Acaso, coincidêcia e sorte: Uma questão de probabilidade"
 img: image/article/13/probabilidade.jpg
-header: Acaso, coincidência e sorte<br><strong>Uma questão de probabilidade</strong>
+header: "Acaso, coincidência e sorte:<br><strong>Uma questão de probabilidade</strong>"
 ---
 
 O conceito de probabilidade é simples, calcular a quantidade de chances que alguma coisa tem de acontecer dentro de um contexto. Essa é uma ferramenta obrigatória para qualquer aposta. Um baralho completo deve conter 52 cartas, sendo quatro naipes, dois pretos (zap e espada) e dois vermelhos (copas e ouro), uma variação em cada naipe das cartas A, 2, 3, 4, 5, 6, 7, 8, 9, 10, J, Q e K.
