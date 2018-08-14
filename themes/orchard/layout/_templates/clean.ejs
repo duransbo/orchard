@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width">
 		<base href="<%- config.root %>">
-		<%- partial('_pages/' + template + '/index-head', null, {cache: !config.relative_link}) %>
+		<%- partial('_pages/' + template + '/index-head') %>
 		<link rel="shortcut icon" href="image/orchard.ico" type="image/x-icon">
 		<link rel="canonical" href="<%- path %>">
 		<%- css('css/template') %>
@@ -16,7 +16,7 @@
 
 	<body>
     <%- partial('_components/header', null, {cache: !config.relative_link}) %>
-		<%- partial('_pages/' + template + '/index', null, {cache: !config.relative_link}) %>
+		<%- partial('_pages/' + template + '/index') %>
     <%- partial('_components/footer', null, {cache: !config.relative_link}) %>
 		<%- js('js/script') %>
 		<%- js('js/header') %>
