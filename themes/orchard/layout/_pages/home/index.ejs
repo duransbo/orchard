@@ -24,11 +24,11 @@
         <h1 class="blog-title">Ultimos artigos</h1>
     </header>
 
-    <% site.posts.each(function(post){ %>
-        <ul class="blog-articles">
+    <ul class="blog-articles">
+        <% site.posts.each(function(post){ %>
             <li class="blog-article" data-image="<%- post.img %>"><a class="blog-article-link" href="<%- url_for(post.path) %>"><%- post.title %></a></li>
-        </ul>
-    <% }) %>
+        <% }) %>
+    </ul>
 
     <a class="blog-invite" href="lista-de-artigos">Veja a lista de todos os artigos</a>
 

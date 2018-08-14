@@ -5,15 +5,9 @@
     </header>
 
     <ul class="blog-articles">
-        <?php
-            define('TOTAL_BANNER', 3);
-            $select = mysql_query('SELECT * FROM tab_articles ORDER BY article_id desc LIMIT 0, '.TOTAL_BANNER);
-            while($row = mysql_fetch_array($select, MYSQL_ASSOC)):
-                ?>
-                   <li class="blog-article" data-image="<?php echo IMAGE ?>article/<?php echo $row['article_id'] ?>/<?php echo $row['article_img'] ?>.jpg"><a class="blog-article-link" href="artigo/<?php echo $row['article_link'] ?>"><?php echo $row['article_title'] ?></a></li>
-                <?php
-            endwhile;
-        ?>
+        <% site.posts.each(function(post){ %>
+            <li class="blog-article" data-image="<%- post.img %>"><a class="blog-article-link" href="<%- url_for(post.path) %>"><%- post.title %></a></li>
+        <% }) %>
     </ul>
 
 </section>
