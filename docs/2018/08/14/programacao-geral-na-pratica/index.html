@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width">
+		<base href="/orchard/">
+		<title>Logica de programação: Programação geral na prática | Orchard Minds</title>
+		<link rel="shortcut icon" href="image/orchard.ico" type="image/x-icon">
+		<link rel="canonical" href="2018/08/14/programacao-geral-na-pratica/index.html">
+		<link rel="stylesheet" href="/orchard/css/template.css">
+		<link rel="stylesheet" href="/orchard/css/artigo.css">
+	</head>
+
+	<body>
+    <header class="body-header">
+
+	<a class="logo-link" href="home" title="home">
+		<img class="logo-icon" src="image/folha.png" alt="folha logo orchard minds icone">
+		<h1 class="logo-title">Orchard Minds</h1>
+	</a>
+
+	<div class="menu-control -icon">&#xf0c9;</div>
+
+	<nav>
+		<ul class="menu-header _close">
+	   	<li><a class="menu-link" href="home">Home</a></li>
+	      <li><a class="menu-link" href="lista-de-artigos">Lista de Artigos</a></li>
+		</ul>
+	</nav>
+
+</header>
+		<main>
+	<article class="article">
+		<header class="article-header" style="background-image:url(image/article/16/ola.jpg)">
+			<div class="article-title">
+				<h1>Logica de programação:<br> <strong>Programação geral na prática</strong></h1>
+			</div>
+		</header>
+		<div class="article-text -container">
+			<p>Com um breve entendimento de como uma máquina pode trabalhar com as informações descrito no artigo <a href="/orchard/2018/08/14/como-as-maquinas-pensam/" title="Introdução a lógica de programação: Como as máquinas pensam">Introdução a lógica de programação: Como as máquinas pensam</a>, é necessário aprender como escrever os algoritmos que a máquina utilizará nos processos que ela deve realizar.</p>
+<p>O primordial é entender como funciona uma referência de memória, utilizada para acessar um determinado espaço na memoria reservado para salvar informações, sendo um recurso que todo processamento complexo utiliza para manipular informações durante execução. Toda processo é uma sequencia de comandos que são acessos as referências, gravações nas referências, operações matemáticas, etc.</p>
+<p>Uma referência de memória pode ter três tipos durante a execução do programa. Uma variável é uma referência de memória que pode ser acessada e gravada diversas vezes durante o processamento. Uma constante é uma referência que é gravada no inicio do processo e não será alterada até o final da execução. E o multi-dado é uma referência que agrupa um conjunto de posições em um contexto que funcionam igual variáveis.<br><code>    variavel = 1; // referência igual a 1<br>    variavel = 2; // referência sobreesscrita para 2<br>    constante = 3.14; // Numero de PI (imutável)<br>    multidado = [‘a’,’b’,’c’]; // Conjunto de dados<br></code></p>
+<p>As referências de memória possibilitam que outras estruturas utilizem esses dados para criar uma logica de processo. Uma verificação condicional realiza um teste que retorna verdadeiro ou falso. Caso o retorno sejá verdadeiro, uma sequencia de comandos será executada e o programa segura normalmente. Caso o retorno sejá falso, a sequencia não será executada e o programa segue para o próximo comando fora da condição.<br><code>    variavel = 1;<br>    // Executado<br>    se (variavel &lt;= 3) {<br>        // Executado<br>        // Executado<br>    }<br>    // Executado<br>    se (variavel == 0) {<br>        // Não executado<br>        // Não executado<br>    }<br>    // Executado<br></code></p>
+<p>Um laço de repetição funciona basicamente como uma verificação condicional, uma sequencia de comandos será executada quando um teste retornar verdadeiro, mas o teste será realizado novamente depois do final desse sequencia. Logo, toda vez que o teste retornar verdadeiro a sequencia será executada novamente e só sairá do laço quando o teste retornar falso, com o programa seguindo após a sequencia determinada.<br><code>    variavel = 1;<br>    // Executado<br>    enquanto (variavel &lt;= 3) {<br>        // Executado (total 3 vezes)<br>        variavel = variavel + 1;<br>        // Executa o teste (variavel &lt;= 3)<br>    }<br>    // Executado quando variavel for &gt; 3<br></code></p>
+<p>Essas são as estruturas basicas de qualquer linguagem utilizadas para escrever os algoritmos que as máquinas seguem. Porém, o que torna os programas algo tão util para a sociedade é a capacidade de responder as situações variáveis de entrada fornecidas por algo externo e devolver uma resposta após o processamento que comumente é um ser humano. Essa relação de humano-computador será melhor descrita em um proximo artigo.</p>
+
+		</div>
+	</article>
+</main>
+    <footer class="body-footer"></footer>
+		<script src="/orchard/js/script.js"></script>
+		<script src="/orchard/js/header.js"></script>
+		<script src="/orchard/js/artigo.js"></script>
+  </body>
+
+</html>

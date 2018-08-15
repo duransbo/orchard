@@ -7,11 +7,13 @@
 
         <p>Orchard minds é um lugar para pessoas que se divertem aprendendo.</p>
 
-        <p>Seu principal proposito é servir de plataforma para os Seeders compartilharem o que sabem, enquanto ajudam outras pessoas a evoluir. A constante vontade de se aperfeiçoar e obter conhecimento é o que move todos que estão aqui.</p>
+        <p>Seu principal propósito é servir de plataforma para os Seeders compartilharem o que sabem, enquanto ajudam outras pessoas a evoluir. A constante vontade de se aperfeiçoar e obter conhecimento é o que move todos que estão aqui.</p>
 
-        <p>Uma iniciativa criada para ajudar pessoas. Conheça desenvolvedores, metodologias e ferramentas que podem auxiliar em seus projetos.</p>
+        <p class="intro-invite">Uma iniciativa criada para ajudar pessoas</p>
+        
+        <!--<p>Uma iniciativa criada para ajudar pessoas. Conheça desenvolvedores, metodologias e ferramentas que podem auxiliar em seus projetos.</p>
 
-        <p class="intro-invite">Queremos que você faça parte dessa grupo também!</p>
+        <p class="intro-invite">Queremos que você faça parte dessa grupo também!</p>-->
 
     </article>
 </main>
@@ -25,7 +27,7 @@
     </header>
 
     <ul class="blog-articles">
-        <% site.posts.each(function(post){ %>
+        <% site.posts.sort('date', 'desc').limit(3).each(function(post){ %>
             <li class="blog-article" data-image="<%- post.img %>"><a class="blog-article-link" href="<%- url_for(post.path) %>"><%- post.title %></a></li>
         <% }) %>
     </ul>
